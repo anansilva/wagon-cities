@@ -1,10 +1,8 @@
-import cities from '../../data/cities';
-
-function setCities() {
+const setActiveCity = (city) => {
   return {
-    type: 'SET_CITIES',
-    payload: cities
+    type: 'SET_ACTIVE_CITY',
+    payload: city
   };
-}
+};
 
-export default setCities;
+export default setActiveCity;

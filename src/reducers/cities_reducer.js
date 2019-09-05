@@ -1,13 +1,15 @@
-const citiesReducer = (state, action) => {
+import cities from '../../data/cities';
+
+const citiesReducer = (state = null, action) => {
   if (state === undefined) {
     return [];
   }
 
   switch (action.type) {
-    case 'SET_CITIES':
-      return action.payload;
-    default:
+    case 'CITY_SELECTED':
       return state;
+    default:
+      return cities;
   }
 };
 
