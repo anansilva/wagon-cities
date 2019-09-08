@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-import setActiveCity from '../actions';
+import { setActiveCity } from '../actions';
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(

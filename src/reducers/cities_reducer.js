@@ -1,11 +1,9 @@
-import cities from '../../data/cities';
-
-const citiesReducer = (state = null, action) => {
+const citiesReducer = (state = [], action) => {
   switch (action.type) {
-    case 'SET_ACTIVE_CITY':
-      return state;
+    case 'SET_CITIES':
+      return action.payload;
     default:
-      return cities;
+      return state;
   }
 };
 

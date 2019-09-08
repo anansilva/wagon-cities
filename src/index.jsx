@@ -18,8 +18,9 @@ const reducers = combineReducers({
   cities: citiesReducer,
   activeCity: activeCityReducer
 });
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const middlewares = applyMiddleware(reduxPromise, logger);
+const middlewares = composeEnhancers(applyMiddleware(reduxPromise, logger));
 // render an instance of the component in the DOM
 ReactDOM.render(
   <Provider store={createStore(reducers, {}, middlewares)}>
