@@ -1,11 +1,18 @@
-# redux-boilerplate
+# Wagon Cities
 
-Simple React + Redux starter with the following config:
+Simple React + Redux exercise that shows information on the Le Wagon's campuses
 
-- React, ReactDOM
-- Redux, React-Redux
-- Webpack 3
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+## Installation
+
+```
+git clone git@github.com:anansilva/wagon-cities
+npm i
+```
+
+## Usage
+
+### Development server
+
+```bash
+yarn start
+```
