@@ -9,10 +9,11 @@ git clone git@github.com:anansilva/wagon-cities
 npm i
 ```
 
-## Usage
-
-### Development server
+## Running locally
 
 ```bash
 yarn start
+
+http:\\localhost:8080
 ```
+
